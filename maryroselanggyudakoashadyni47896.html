@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>For My Mary Rose ❤️</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background: #ffebf0;
+            text-align: center;
+            padding: 20px;
+        }
+        .section {
+            width: 100%;
+            margin-bottom: 40px;
+            padding: 20px;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.8);
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        .emoji {
+            font-size: 40px;
+            margin: 10px 0;
+        }
+        .password-box {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            display: inline-block;
+        }
+        input {
+            padding: 10px;
+            font-size: 18px;
+            width: 200px;
+            text-align: center;
+            border: 2px solid #ff4d4d;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .error {
+            color: red;
+            display: none;
+            margin-top: 10px;
+        }
+        .btn {
+            margin-top: 20px;
+            background: #ff4d4d;
+            color: white;
+            padding: 12px 25px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            border-radius: 30px;
+        }
+        .btn:hover {
+            background: #cc0000;
+        }
+        .photo-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            max-width: 90%;
+            overflow-x: auto;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        .photo-container img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 15px;
+            border: 3px solid #ff4d4d;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <audio id="bgMusic" autoplay loop>
+        <source src="Marilag.mp3" type="audio/mp3">
+    </audio>
+
+    <!-- Password Section -->
+    <div class="section" id="passwordSection">
+        <div class="emoji">💖🌸💖</div>
+        <div class="password-box">
+            <h1>Welcome</h1>
+            <h2>Enter Password</h2>
+            <input type="password" id="passwordInput" placeholder="Enter password">
+            <p class="error" id="errorMessage">Wrong password, try again!</p>
+            <button class="btn" onclick="checkPassword()">Unlock</button>
+            
+            <h3>Please enter the password to open the link.</h3>
+        </div>
+        <div class="emoji">💖🌸💖</div>
+    </div>
+
+    <!-- Content Sections (Hidden Initially) -->
+    <div id="content" class="hidden">
+        <!-- Cover Page -->
+        <div class="section">
+            <div class="emoji">🌹✨🌹</div>
+            <h1>For My Girl ❤️</h1>
+            <p>A letter from my heart to yours...</p>
+            <div class="emoji">🌹✨🌹</div>
+        </div>
+
+        <!-- Collage-Style Photo Page -->
+        <div class="section">
+            <div class="emoji">💖🌸💖</div>
+            <h2>The Beauty that I Admire</h2>
+            <div class="photo-container">
+                <img src="photo1.jpg" alt="Memory 1">
+                <img src="photo2.jpg" alt="Memory 2">
+                <img src="photo3.jpg" alt="Memory 3">
+                <img src="photo4.jpg" alt="Memory 4">
+                <img src="photo5.jpg" alt="Memory 5">
+                <img src="photo6.jpg" alt="Memory 6">
+            </div>
+            <div class="emoji">💖🌸💖</div>
+        </div>
+
+        <!-- Letter Pages -->
+        <div class="section">
+            <div class="emoji">🌸💖🌸</div>
+            <h2>Dear Mary Rose Martinez,</h2>
+            <p>From the moment I met you, my heart knew you were special. You are the most wonderful person in my life.</p>
+            <div class="emoji">🌸💖🌸</div>
+        </div>
+
+        <!-- Letter Pages -->
+        <div class="section">
+            <div class="emoji">🌸💖🌸</div>
+            <h2>My Happiness</h2>
+            <p>From the moment I met you, my life was change, I was a nonchalant sa una, but you boosted up my confidence that's why di nako kamao ma hadlok and I have courage to stand, and I am always thinking of you as always, even my parents sigeg pangita sa imoha. I'm sorry pud sa akong mga kasayupan na akong na buhat, di man ko perpekto para ma ingnaan na di ma sayup and I am very sorry about that huhuhuh. I am happy that I met you mary rosey, you really made my life special and I got this feeling that I loved you more than myself, and even when were talking, my mood turns to very good gyud, and I am so very very thankful to God and about meeting you.</p>
+            <div class="emoji">🌸💖🌸</div>
+        </div>
+        
+        <!-- Ending Page -->
+        <div class="section">
+            <div class="emoji">💖🌹💖</div>
+            <h2>I love you and still you...</h2>
+            <p>I still love you and you only, even you blocked me, i still choose you, i love you with all my heart, and doing everything for me to be your deserving man, I love you mary rose and Take care as always.
+            Your Suitor
+            - Shady
+            </p>
+            <div class="emoji">💖🌹💖</div>
+        </div>
+    </div>
+
+    <script>
+        function checkPassword() {
+            let password = document.getElementById("passwordInput").value;
+            if (password === "maryrosey") {
+                document.getElementById("passwordSection").style.display = "none";
+                document.getElementById("content").classList.remove("hidden");
+            } else {
+                document.getElementById("errorMessage").style.display = "block";
+            }
+        }
+
+        window.onload = function() {
+            let audio = document.getElementById("bgMusic");
+            audio.play().catch(error => {
+                console.log("Autoplay blocked! User must interact first.");
+            });
+        };
+    </script>
+
+</body>
+</html>
