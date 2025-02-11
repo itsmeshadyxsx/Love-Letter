@@ -14,7 +14,7 @@ This is a beautiful and heartfelt **website letter** dedicated to my beloved. It
 - If it doesn't, tap the **Play** button on the page.  
 
 ## 🔗 Live Link:  
-👉 [Click Here to View](https://itsmeshadyxsx.github.io/love-letter/)  
+👉 [Click Here to View](https://itsmeshadyxsx.love.letter.io/)  
 
 ## 📂 Files Included:
 - `index.html` → Main webpage  
